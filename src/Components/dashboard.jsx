@@ -35,7 +35,7 @@ const Dashboard = () => {
 
     // Fetch user details
     axios
-      .get(`http://localhost:5000/users/${created_by}`)
+      .get(`https://fitquest-backend-2.onrender.com/users/${created_by}`)
       .then((response) => {
         setUsername(response.data.username);
       })
@@ -45,7 +45,7 @@ const Dashboard = () => {
 
     // Fetch workouts
     axios
-      .get(`http://localhost:5000/workouts_with_levels?created_by=${created_by}`)
+      .get(`https://fitquest-backend-2.onrender.com/workouts_with_levels?created_by=${created_by}`)
       .then((response) => {
         setWorkouts(response.data);
       })
