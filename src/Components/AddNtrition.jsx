@@ -40,7 +40,7 @@ const AddNutrition = () => {
     }
   
     try {
-      const response = await fetch("http://localhost:5000/nutrition", {
+      const response = await fetch("https://fitquest-backend-2.onrender.com/nutrition", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ 

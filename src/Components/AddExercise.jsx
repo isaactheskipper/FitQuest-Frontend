@@ -20,7 +20,7 @@ const AddExercise = () => {
     setError(null);
 
     try {
-      await axios.post(`http://localhost:5000/exercises`, {
+      await axios.post(`https://fitquest-backend-2.onrender.com/exercises`, {
         workout_id: workoutId,
         name,
         description,

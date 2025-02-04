@@ -25,7 +25,7 @@ const AddWorkout = () => {
   useEffect(() => {
     const fetchLevels = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:5000/levels");
+        const response = await fetch("https://fitquest-backend-2.onrender.com/levels");
         if (response.ok) {
           const data = await response.json();
           setLevels(data);
@@ -58,7 +58,7 @@ const AddWorkout = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/workouts", {
+      const response = await fetch("https://fitquest-backend-2.onrender.com/workouts", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...formData, created_by }),

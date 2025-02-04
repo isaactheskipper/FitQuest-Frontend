@@ -25,7 +25,7 @@ const WorkoutDetails = () => {
 
     // Fetch workout details and exercises by workout ID
     axios
-      .get(`http://localhost:5000/workouts/${workoutId}`)
+      .get(`https://fitquest-backend-2.onrender.com/workouts/${workoutId}`)
       .then((response) => {
         setWorkout(response.data);
         setExercises(response.data.exercises || []); // Extract exercises from the response

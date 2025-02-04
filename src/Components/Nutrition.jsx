@@ -26,7 +26,7 @@ const Nutrition = () => {
     }, 200);
 
     axios
-      .get(`http://localhost:5000/nutrition?created_by=${created_by}`)
+      .get(`https://fitquest-backend-2.onrender.com/nutrition?created_by=${created_by}`)
       .then((response) => {
         setNutritionData(response.data);
       })
