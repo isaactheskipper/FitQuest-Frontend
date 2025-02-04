@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  background: linear-gradient(to right, rgb(2, 97, 10), rgb(110, 245, 117));
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.workout-table {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.table-header,
+.table-cell {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.table-header {
+  background-color: #f4f4f4;
+}
+
+.table-cell {
+  padding: 8px;
+}
+
+.even-row {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+
+.odd-row {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.no-workouts {
+  text-align: center;
+  padding: 20px;
+}
+
+.add-button-container {
+  margin-top: 20px;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.add-button,
+.more-button,
+.exercise-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: linear-gradient(to right, rgb(2, 97, 10), rgb(110, 245, 117));
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.add-button:hover,
+.more-button:hover,
+.exercise-button:hover {
+  background: linear-gradient(to right, rgb(0, 80, 0), rgb(80, 200, 80));
+  transform: scale(1.05);
+}
+
+.plus-sign {
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+.add-button:hover .plus-sign {
+  transform: rotate(360deg);
+}
+
+.more-button {
+  padding: 5px 10px;
+  min-width: 60px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more-arrow {
+  margin-left: 8px;
+  font-size: 14px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.more-button:hover .more-arrow {
+  transform: translateX(5px);
+}
+
+.exercise-button-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.add-workout-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-workout-btn:hover {
+  background-color: #333;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 18px;
+  color: #888;
+}
+
+.progress-bar {
+  width: 80%;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(to right, rgb(2, 97, 10), rgb(110, 245, 117));
+  transition: width 0.4s ease;
+}

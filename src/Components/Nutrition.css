@@ -1,0 +1,131 @@
+.nutrition-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .nutrition-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(to right, rgb(2, 97, 10), rgb(110, 245, 117));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  
+  .nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto; /* Adds top margin to move the table down */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+  
+  .nutrition-table th,
+  .nutrition-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .nutrition-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .even-row {
+    background-color: #f9f9f9;
+  }
+  
+  .odd-row {
+    background-color: #ffffff;
+  }
+  
+  .no-data {
+    color: #555;
+    font-size: 18px;
+    padding: 20px;
+  }
+  
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 18px;
+    color: #888;
+  }
+  
+  .progress-bar {
+    width: 80%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(to right, rgb(2, 97, 10), rgb(110, 245, 117));
+    transition: width 0.4s ease;
+  }
+  
+  .back-button-container {
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  .back-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #45a049;
+  }
+
+  /* Nutrition.css */
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 500px; /* Adds space between buttons */
+  }
+  
+  .back-button, .add-nutrition-button {
+    padding: 10px 1%;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .back-button:hover, .add-nutrition-button:hover {
+    background: linear-gradient(to right, rgb(2, 97, 10), rgb(110, 245, 117));
+  }
+
+  .add-nutrition:hover, .add-nutrition-button:hover {
+    background: linear-gradient(to right, rgb(2, 97, 10), rgb(110, 245, 117));
+  }
+  
+  
+  
